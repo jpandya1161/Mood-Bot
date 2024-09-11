@@ -1,0 +1,250 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: dashboard_employee
+    examples: |
+      - how to [add](crud_data) [employee](dashboard) data
+      - what a [name](employee_data) of this [employee](dashboard) id
+      - what could be the [name](employee_data) of this [employee](dashboard)
+      - what is this [employee](dashboard) [ID](employee_data)
+      - Is this [employee](dashboard) on the database
+      - [employee](dashboard) data
+      - Say all things about [employee](dashboard)
+      - what you know about [employee](dashboard)
+      - give this [employee](dashboard) [address](employee_data)
+      - [Salary](employee_salary) of [employee](dashboard)
+      - [Department](employee_data) of [employee](dashboard)
+      - [employee](dashboard) [birthdate](employee_data)
+      - [Add](crud_data) [employee](dashboard)
+      - give [id](employee_data) of [employee](dashboard)
+      - [employee](dashboard) [phone](phone_number) list
+      - [employee](dashboard) [calls](phone_number) list
+      - give [Birthday](employee_data) of [employee](dashboard)
+      - [salary](employee_salary) data of [employee](dashboard)
+
+  - intent: dashboard_employee_personal_training
+    examples: |
+      - give [PT](employee_personal_training) details of [employee](dashboard)
+      - what [personal trainings](employee_personal_training) of [employee](dashboard)
+      - give details of [employee](dashboard) [pt training](employee_personal_training)
+      - [pt](employee_personal_training) of [employee](dashboard)
+      - [edit](crud_data) [employee](dashboard) [pt](employee_personal_training) data
+      - [name](employee_data) [personal training](employee_personal_training) [delete](crud_data)
+      - [add](crud_data) [id](employee_data) [name](employee_data)
+      - [employee](dashboard) [Personaltraining](employee_personal_training)
+      - give details of [Personal training](employee_personal_training) of [name](employee_data)
+      - [Id](employee_data) [Pt](employee_personal_training)
+
+  - intent: dashboard_employee_attendence
+    examples: |
+      - what is [attendence](employee_attendence) of [employee](dashboard)
+      - [Attendence](employee_attendence) details of [name](employee_data)
+      - give [attendece](employee_attendence) of [ID](employee_data)
+      - how much [attendences](employee_attendence) [employee](dashboard) has
+      - [employee](dashboard) [Attendence](employee_attendence)
+      - [name](employee_data) [attendence](employee_attendence)
+      - [View](crud_data) [name](employee_data) [attendence](employee_attendence)
+
+  - intent: dashboard_employee_salary
+    examples: |
+      - give [salary](employee_salary) details of [employee](dashboard)
+      - how much is the [Salary](employee_salary) of [name](employee_data)
+      - [ID](employee_data) [salary](employee_salary)
+      - what is [employee](dashboard) monthly [salary](employee_salary)
+      - Any [Salary](employee_salary) updates of [Name](employee_data)
+      - [Salary](employee_salary) [view](crud_data) of [name](employee_data)
+      - [View](crud_data) [employee](dashboard) [Salaries](employee_salary)
+      - Give [Name](employee_data) [Salary slip](employee_salary)
+      - [add](crud_data) this [salary](employee_salary) to [ID](employee_data)
+
+  - intent: dashboard_client
+    examples: |
+      - how to [add](crud_data) [client](dashboard) data
+      - what a [name](client_data) of this [client](dashboard) id
+      - what could be the [Lastname](client_data) of this [client](dashboard)
+      - what is this [client](dashboard) [ID](client_data)
+      - Is this [client](dashboard) on the database
+      - [client](dashboard) data
+      - Say all things about [client](dashboard)
+      - what you know about [client](dashboard)
+      - give this [client](dashboard) [birthdate](client_data)
+      - [gender](client_data) of [client](dashboard)
+      - [First Name](client_data) of [client](dashboard)
+      - [client](dashboard) [id](client_data)
+      - [Add](crud_data) [client](dashboard)
+      - give [lastname](client_data) of [client](dashboard)
+      - give [Birthday](client_data) of [client](dashboard)
+      - [ID](client_data) data of [client](dashboard)
+      - what is the [age](client_data) of [Name](client_data)
+      - Give [phone number](client_data) of [lastname](client_data)
+      - [client](dashboard) [phone](phone_number) list
+      - [Edit](crud_data) [age](client_data) of [name](client_data)
+      - [Name](client_data) [view](crud_data)
+      - [delete](crud_data) this [client](dashboard) [ID](client_data)
+
+  - intent: dashboard_client_appointment
+    examples: |
+      - give [appointment](client_appointment) details of [client](dashboard)
+      - how is the [Appointment](client_appointment) of [name](client_data)
+      - [ID](client_data) [Appointments](client_appointment)
+      - what is [client](dashboard) monthly [appointments](client_appointment)
+      - Any [Appointment](client_appointment) updates of [Name](client_data)
+      - [appointment](client_appointment) [view](crud_data) of [name](employee_data)
+      - [View](crud_data) [client](dashboard) [appointment](client_appointment)
+      - Give [Name](client_data) [appointment](client_appointment) date
+      - [add](crud_data) this [appointment](client_appointment) to [ID](employee_data)
+
+  - intent: dashboard_phone_number
+    examples: |
+      - give [phone](phone_number) details of [employee](dashboard)
+      - what is the [phone](phone_number) of [name](employee_data)
+      - [ID](employee_data) [Phone](phone_number)
+      - what is [employee](dashboard) monthly [calls](phone_number)
+      - Any [phone](phone_number) updates of [Name](employee_data)
+      - [phonenumber](phone_number) [view](crud_data) of [name](employee_data)
+      - [View](crud_data) [employee](dashboard) [Phonenumber](phone_number)
+      - Give [Name](employee_data) [phone](phone_number)
+      - [add](crud_data) this [phone number](phone_number) to [ID](employee_data)
+      - give [phone](phone_number) details of [client](dashboard)
+      - what is the [phone](phone_number) of [name](client_data)
+      - [ID](client_data) [Phone](phone_number)
+      - what is [client](dashboard) monthly [calls](phone_number)
+      - Any [phone](phone_number) updates of [Name](client_data)
+      - [phonenumber](phone_number) [view](crud_data) of [name](client_data)
+      - [View](crud_data) [client](dashboard) [Phonenumber](phone_number)
+      - Give [Name](client_data) [phone](phone_number)
+      - [add](crud_data) this [phone number](phone_number) to [ID](client_data)
+
+  - intent: dashboard_program_management
+    examples: |
+      - show [PM](dashboard) of [name](client_data)
+      - give details of [Program management](dashboard) of [ID](client_data)
+      - [add](crud_data) this [Programmanagement](dashboard) to [ID](client_data)
+      - this [Id](client_data) clients [pm](dashboard) [edit](crud_data)
+      - Any [Program Management](dashboard) updates of [Name](client_data)
+      - [ID](client_data) [Pm](dashboard)
+      - [phonenumber](phone_number) [view](crud_data) of [programmanagement](dashboard)
+      - [Delete](crud_data) [PM](dashboard) of [ID](client_data)
+      - all [program management](dashboard) of [client](dashboard)
+      - show [client](dashboard) [pm](dashboard)
+
+  - intent: dashboard_program_management_plan
+    examples: |
+      - show [plan](client_plan) of [name](client_data)
+      - give [plan](client_plan) details of [client](dashboard)
+      - what is a [Plan](client_plan) of [phonenumber](phone_number)
+      - Give [Name](client_data) [Plans](client_plan)
+      - [add](crud_data) this [plan](client_plan) to [ID](client_data)
+      - this [ID](client_data) clients [plan](client_plan) [edit](crud_data)
+      - Any [plan](client_plan) updates of [Name](client_data)
+      - [ID](client_data) [Plan](client_plan)
+      - [phonenumber](phone_number) [view](crud_data) of [plan](client_plan)
+      - [Delete](crud_data) [plans](client_plan) of [ID](client_data)
+      - all [plans](client_plan) of [client](dashboard)
+      - show [client](dashboard) [plans](client_plan)
+
+  - intent: dashboard_program_management_program
+    examples: |
+      - show [program](client_program) of [name](client_data)
+      - give [Program](client_program) details of [client](dashboard)
+      - what is a [program](client_program) of [phonenumber](phone_number)
+      - Give [Name](client_data) [programs](client_program)
+      - [add](crud_data) this [Program](client_program) to [ID](client_data)
+      - this [ID](client_data) clients [Programs](client_program) [edit](crud_data)
+      - Any [program](client_program) updates of [Name](client_data)
+      - [ID](client_data) [program](client_program)
+      - [phonenumber](phone_number) [view](crud_data) of [program](client_program)
+      - all [programs](client_program) of [client](dashboard)
+      - show [client](dashboard) [Programs](client_program)
+      - [Dlt](crud_data) [program](client_program) of [ID](client_data)
+      - show client [proagram](client_program) and [plans](client_plan)
+

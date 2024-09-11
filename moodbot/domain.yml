@@ -1,0 +1,90 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - dashboard_employee
+  - dashboard_employee_personal_training
+  - dashboard_employee_attendence
+  - dashboard_employee_salary
+  - dashboard_client
+  - dashboard_client_appointment
+  - dashboard_phone_number
+  - dashboard_program_management
+  - dashboard_program_management_plan
+  - dashboard_program_management_program
+
+lookup:
+  - crud_data
+  - dashboard
+  - employee_data
+  - employee_personal_training
+  - employee_attendence
+  - employee_salary
+  - client_data
+  - client_appointment
+  - phone_number
+  - client_plan
+  - client_program
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_crud_data:
+    - text: "I understand your data. It is crud data."
+
+  utter_dashboard:
+    - text: "I understand your data. It is dashboard."
+
+  utter_employee_data:
+    - text: "I understand your data. It is employee data."
+
+  utter_employee_personal_training:
+    - text: "I understand your data. It is employee personal training."
+
+  utter_employee_attendence:
+    - text: "I understand your data. It is employee attendence."
+
+  utter_employee_salary:
+    - text: "I understand your data. It is employee salary."
+
+  utter_client_data:
+    - text: "I understand your data. It is client data."
+
+  utter_client_appointment:
+    - text: "I understand your data. It is client appointment."
+
+  utter_phone_number:
+    - text: "I understand your data. It is phone number."
+
+  utter_client_plan:
+    - text: "I understand your data. It is client plan."
+
+  utter_client_program:
+    - text: "I understand your data. It is client program."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

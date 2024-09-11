@@ -1,0 +1,169 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for employee data
+    steps:
+      - intent: dashboard_employee
+      - action: utter_dashboard
+      - action: utter_employee_data
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for employee data 2
+    steps:
+      - intent: dashboard_employee
+      - action: utter_dashboard
+      - action: utter_employee_data
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for employee personal training
+    steps:
+      - intent: dashboard_employee_personal_training
+      - action: utter_employee_personal_training
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for employee personal training 2
+    steps:
+      - intent: dashboard_employee_personal_training
+      - action: utter_employee_personal_training
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for employee attendence
+    steps:
+      - intent: dashboard_employee_attendence
+      - action: utter_employee_attendence
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for employee attendence 2
+    steps:
+      - intent: dashboard_employee_attendence
+      - action: utter_employee_attendence
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for employee salary
+    steps:
+      - intent: dashboard_employee_salary
+      - action: utter_employee_salary
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for employee salary 2
+    steps:
+      - intent: dashboard_employee_salary
+      - action: utter_employee_salary
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for client data
+    steps:
+      - intent: dashboard_client
+      - action: utter_dashboard
+      - action: utter_client_data
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for client data 2
+    steps:
+      - intent: dashboard_client
+      - action: utter_dashboard
+      - action: utter_client_data
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for client appointment
+    steps:
+      - intent: dashboard_client_appointment
+      - action: utter_client_appointment
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for client appointment 2
+    steps:
+      - intent: dashboard_client_appointment
+      - action: utter_client_appointment
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for phone number
+    steps:
+      - intent: dashboard_phone_number
+      - action: utter_phone_number
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for phone number 2
+    steps:
+      - intent: dashboard_phone_number
+      - action: utter_phone_number
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for client plan
+    steps:
+      - intent: dashboard_program_management_plan
+      - action: utter_client_plan
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for client plan 2
+    steps:
+      - intent: dashboard_program_management_plan
+      - action: utter_client_plan
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: inquiry for client program
+    steps:
+      - intent: dashboard_program_management_program
+      - action: utter_client_program
+      - intent: affirm
+      - action: utter_happy
+
+  - story: inquiry for client program 2
+    steps:
+      - intent: dashboard_program_management_program
+      - action: utter_client_program
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: Retrieve employee details
+    steps:
+      - intent: dashboard_employee
+      - action: action_retrieve_employee_details
+
+  - story: Retrieve employee list
+    steps:
+      - intent: dashboard_employee
+      - action: action_retrieve_employee_list
